@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for openclaw-xhxpeq on 2026-02-28T09:03:26Z
+# fly.toml app configuration file generated for openclaw-mhttfw on 2026-02-28T10:08:14Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'openclaw-xhxpeq'
+app = 'openclaw-mhttfw'
 primary_region = 'ams'
 
 [build]
