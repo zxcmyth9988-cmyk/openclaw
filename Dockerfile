@@ -18,9 +18,9 @@ COPY . .
 # 构建指定应用（如果没有构建步骤可删除此行）
 RUN pnpm build --filter makemoneywithai
 
-EXPOSE 18789
+EXPOSE 8080
 ENV NODE_ENV=production
-ENV PORT=18789
+ENV PORT=8080
 
 # 启动指定应用
 CMD ["pnpm", "--filter", "makemoneywithai", "start"]
