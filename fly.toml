@@ -4,11 +4,15 @@ primary_region = "sin"
 [build]
 
 [env]
-  NODE_ENV = "production"
-  PORT = "18789"
+ const PORT = process.env.PORT || 8080;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
+}
+)
 
 [http_service]
-  internal_port = 18789
+  [http_service]
+  internal_port = 8080  # 改成 8080
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
